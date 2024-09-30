@@ -1,13 +1,16 @@
 import SideBar from "./component/sideBar/SideBar";
 import "./App.scss";
 import Dashboard from "./component/dashBoard/Dashboard";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
 const App = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       <div className="appContainer">
-        <SideBar />
-        <Dashboard />
+        <SideBar isOpen={isOpen} onMenuOpen={() => setOpen(!isOpen)} />
+        <Dashboard onMenuOpen={() => setOpen(!isOpen)} />
       </div>
     </>
   );

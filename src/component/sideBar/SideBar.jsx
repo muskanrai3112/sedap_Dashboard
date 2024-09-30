@@ -1,11 +1,18 @@
 import { ReactComponent as Icon } from "../../assets/sidebarIcon.svg";
 import { ReactComponent as CardImg } from "../../assets/cardImg.svg";
+import { MdCancelPresentation } from "react-icons/md";
+
 import "./sideBar.scss";
 
-const SideBar = () => {
+const SideBar = ({ isOpen, onMenuOpen }) => {
   return (
     <>
-      <div className="sideBar">
+      <div className={` ${isOpen ? "sideBar sideBar__collapsed" : ""}`}>
+        {isOpen && (
+          <button className="" onClick={onMenuOpen}>
+            <MdCancelPresentation />
+          </button>
+        )}
         <div className="sideBar__head">
           <h3 className="sideBar__title">
             Sedap<span>.</span>
