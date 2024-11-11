@@ -7,7 +7,7 @@ import "./sideBar.scss";
 const SideBar = ({ isOpen, onMenuOpen }) => {
   return (
     <>
-      <div className={` ${isOpen ? "sideBar sideBar__collapsed" : ""}`}>
+      <div className={` sideBar ${isOpen ? "sideBar__collapsed" : ""}`}>
         {isOpen && (
           <button className="" onClick={onMenuOpen}>
             <MdCancelPresentation />

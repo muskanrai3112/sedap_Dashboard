@@ -1,9 +1,10 @@
 import SideBar from "./component/sideBar/SideBar";
 import "./App.scss";
-import Dashboard from "./component/dashBoard/Dashboard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
+import Dashboard from "./component/dashBoard/DashBoard";
+
 const App = () => {
   const [isOpen, setOpen] = useState(false);
   return (

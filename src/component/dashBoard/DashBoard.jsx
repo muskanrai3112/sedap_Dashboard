@@ -6,7 +6,7 @@ import giftIcon from "../../assets/giftIcon.svg";
 import settinIcon from "../../assets/settingIcon.svg";
 import dropDown from "../../assets/dropDownImg.svg";
 import periodIcon from "../../assets/periodIcon.svg";
-import dropDownIcon from "../../assets/dropdownIcon.svg";
+import dropDownIcon from "../../assets/dropDownIcon.svg";
 import cardImg from "../../assets/cardImg1.png";
 // import uparrow from "../../assets/upArrow.svg";
 import { ReactComponent as Uparrow } from "../../assets/upArrow.svg";
